@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Eerste_Website</title>
+</head>
+
+<body>
+    <div class="contactbox">
+
+        <header class="styling">
+            <a href="index.html" class="nli">Back to home </a>
+        </header>
+
+        <main class="styling">
+            <form name="contact" method="POST" data-netlify="true">
+                <h2 class=> Contact form</h2>
+                <hr>
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="user_name" />
+                <hr>
+                <label for="date">Birthdate:</label>
+                <input type="date" id="date" name="user_birthdate" />
+                <hr>
+                <label for="age">Your age:</label>
+                <input type="number" id="age" name="user_age" />
+                <div>Gender:
+                    <br>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                </div>
+                <hr>
+                <label for="Ownername">Owner name:</label>
+                <input type="text" id="Ownername" name="Ownername" />
+                <hr>
+                <label for="mail">Owner mail:</label>
+                <input type="email" id="email" name="user_email" />
+                <hr>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="user_phone_number/">
+                <hr>
+                <p>Your message :</p>
+                <textarea form="text_area" rows="15" cols="20">
+                    </textarea>
+                <hr>
+                <div>
+                    <input type="hidden" name="hidden" value="hi" />
+
+                    <label for="file">File</label>
+                    <input id="file" type="file" name="file" />
+                </div>
+                <hr>
+                <div>
+                    <label for="url">URL</label>
+                    <input type="url" name="url" id="url" />
+                </div>
+                <hr>
+                <button id="upload_file" type="upload_file">Upload file</button>
+                <hr>
+                <button id="reset" type="reset">Reset</button>
+                <hr>
+                <button id="submit_button" type="submit">Submit</button>
+            </form>
+        </main>
+
+        <aside class="styling">
+            <div class="flexbox">
+                <img width="150px" src="img/hey.jpg" alt="HeyCat" />
+                <img width="150px" src="img/king.jpg" alt="IamKing" />
+                <img width="150px" src="img/music.jpg" alt="headset" />
+                <img width="150px" src="img/mybed.jpg" alt="headset" />
+            </div>
+        </aside>
+
+        <footer class="styling">
+            <h3>Copyright - All rights reserved</h3>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
